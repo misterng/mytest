@@ -4,6 +4,11 @@
 var GridSprite = cc.Sprite.extend({
     ctor:function(){
         this._super();
-        this.initWithFile(s_HelloWorld);
+        this.initWithFile(test);
+
+        this.setContentSize({width:1,height:1});
+        this.setColor(cc.c3b(255, 0, 0));
+        this.setPosition(cc.p(200,300));
+
     }
 });
