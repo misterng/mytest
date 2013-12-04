@@ -1,13 +1,10 @@
-var s_HelloWorld = "res/HelloWorld.png";
-var s_CloseNormal = "res/CloseNormal.png";
-var s_CloseSelected = "res/CloseSelected.png";
+var Bg = "res/M.png";
+var test = "res/test.png";
 
 var g_resources = [
     //image
-    {src:s_HelloWorld},
-    {src:s_CloseNormal},
-    {src:s_CloseSelected}
-
+    {src:Bg},
+    {src:test}
     //plist
 
     //fnt

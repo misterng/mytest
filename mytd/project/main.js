@@ -35,20 +35,15 @@ var cocos2dApp = cc.Application.extend({
         cc.AppController.shareAppController().didFinishLaunchingWithOptions();
     },
     applicationDidFinishLaunching:function () {
-        if(cc.RenderDoesnotSupport()){
-            //show Information to user
-            alert("Browser doesn't support WebGL");
-            return false;
-        }
-        // initialize director
         var director = cc.Director.getInstance();
 
         cc.EGLView.getInstance()._adjustSizeToBrowser();
-        cc.EGLView.getInstance()._resizeWithBrowserSize(true);
-        cc.EGLView.getInstance().setDesignResolutionSize(800, 450, cc.RESOLUTION_POLICY.SHOW_ALL);
+        var screenSize = cc.EGLView.getInstance().getFrameSize();
+        var resourceSize = cc.size(480, 800);
+        var designSize = cc.size(480, 800);
 
-        // turn on display FPS
-        director.setDisplayStats(this.config['showFPS']);
+        director.setContentScaleFactor(resourceSize.width / designSize.width);
+        cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.SHOW_ALL);
 
         // set FPS. the default value is 1.0/60 if you don't call this
         director.setAnimationInterval(1.0 / this.config['frameRate']);

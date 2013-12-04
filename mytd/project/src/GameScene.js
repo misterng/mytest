@@ -24,23 +24,10 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-var MainLayer = cc.Layer.extend({
-
-    init:function () {
-        //////////////////////////////
-        // 1. super init first
-        this._super();
-
-        this.grid = new GridSprite();
-        this.addChild(this.grid);
-    }
-});
-
 var GameScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
         var layer = new MainLayer();
-        layer.init();
         this.addChild(layer);
     }
 });
