@@ -6,6 +6,7 @@ var GridSprite = cc.Sprite.extend({
     ctor:function(){
         _rect:null,
         this._super();
+<<<<<<< HEAD
         cc.registerTargetedDelegate(0, true, this);//注册点击事件
         this.setPosition(cc.p(0,0));
         this.init();
@@ -26,5 +27,13 @@ var GridSprite = cc.Sprite.extend({
     },containPoint:function(touch){//是否在点击区域
         var getPoint = touch.getLocation();
         return cc.rectContainsPoint(this._rect, getPoint);
+=======
+        this.initWithFile(test);
+
+        this.setContentSize({width:1,height:1});
+        this.setColor(cc.c3b(255, 0, 0));
+        this.setPosition(cc.p(200,300));
+
+>>>>>>> 46692db41a5d937fe16e46ee653c7134056e20da
     }
     });
