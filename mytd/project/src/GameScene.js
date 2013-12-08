@@ -24,24 +24,7 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-var MainLayer = cc.LayerGradient.extend({
 
-    ctor:function() {
-        this._super();
-        var a = cc.c4b(255,255,255,255);
-        var b = cc.c4b(255,255,255,255);
-
-        this.init( a, b );
-        this.grid = new GridSprite();
-        this.addChild(this.grid,1);
-
-        var s = cc.Director.getInstance().getWinSize();
-        cc.renderContext.fillStyle = "rgba(255,255,255,1)";//上下文填充颜色
-        cc.renderContext.strokeStyle = "rgba(255,255,255,1)";
-        cc.drawingUtil.drawLine(cc.PointMake(0,0), cc.PointMake(s.width, s.height));//画一条线
-
-    }
-});
 
 var GameScene = cc.Scene.extend({
     onEnter:function () {

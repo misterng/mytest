@@ -46,8 +46,6 @@ var cocos2dApp = cc.Application.extend({
         director.setContentScaleFactor(resourceSize.width / designSize.width);
         cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.SHOW_ALL);
 
-        // turn on display FPS
-        director.setDisplayStats(this.config['showFPS']);
 
         // set FPS. the default value is 1.0/60 if you don't call this
         director.setAnimationInterval(1.0 / this.config['frameRate']);

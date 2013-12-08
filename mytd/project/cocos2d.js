@@ -39,6 +39,9 @@
         //SingleEngineFile:'',
         appFiles:[
             'src/resource.js',
+            'src/MainLayer.js',
+            'src/Monster.js',
+            'src/Building.js',
             'src/Grid.js',
             'src/GameScene.js'//add your own files in order here
         ]
