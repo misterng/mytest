@@ -40,8 +40,11 @@
         appFiles:[
             'src/resource.js',
             'src/MainLayer.js',
+<<<<<<< HEAD
             'src/Monster.js',
             'src/Building.js',
+=======
+>>>>>>> ceddbc3706634a2868d83d0d21bffe90e68bc840
             'src/Grid.js',
             'src/GameScene.js'//add your own files in order here
         ]

@@ -24,8 +24,15 @@
  THE SOFTWARE.
  ****************************************************************************/
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+var MainLayer = cc.LayerGradient.extend({
+>>>>>>> ceddbc3706634a2868d83d0d21bffe90e68bc840
 
 
+>>>>>>> 46692db41a5d937fe16e46ee653c7134056e20da
 var GameScene = cc.Scene.extend({
     onEnter:function () {
         this._super();

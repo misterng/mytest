@@ -1,4 +1,5 @@
 /**
+<<<<<<< HEAD
  * Created by Administrator on 13-12-7.
  */
 var front = cc.MoveBy.create(1, cc.p(0, 20));
@@ -35,4 +36,23 @@ var MainLayer = cc.LayerGradient.extend({
         this.addChild(this.monster);
     }
 
+=======
+ * Created by wjj on 13-12-4.
+ */
+var MainLayer = cc.Layer.extend({
+
+    ctor:function() {
+        this._super();
+
+        var bg = cc.Sprite.create(Bg);
+        this.addChild(bg,0);
+
+        bg.setAnchorPoint(cc.p(0,0));
+        bg.setPosition(cc.p(0,0));
+
+        this.grid = new GridSprite();
+        this.addChild(this.grid,1);
+
+    }
+>>>>>>> ceddbc3706634a2868d83d0d21bffe90e68bc840
 });

@@ -41,11 +41,19 @@ var cocos2dApp = cc.Application.extend({
         var screenSize = cc.EGLView.getInstance().getFrameSize();
         var resourceSize = cc.size(480, 800);
         var designSize = cc.size(480, 800);
+<<<<<<< HEAD
+=======
 
 
         director.setContentScaleFactor(resourceSize.width / designSize.width);
         cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.SHOW_ALL);
+>>>>>>> 46692db41a5d937fe16e46ee653c7134056e20da
 
+<<<<<<< HEAD
+=======
+        director.setContentScaleFactor(resourceSize.width / designSize.width);
+        cc.EGLView.getInstance().setDesignResolutionSize(designSize.width, designSize.height, cc.RESOLUTION_POLICY.SHOW_ALL);
+>>>>>>> ceddbc3706634a2868d83d0d21bffe90e68bc840
 
         // set FPS. the default value is 1.0/60 if you don't call this
         director.setAnimationInterval(1.0 / this.config['frameRate']);
